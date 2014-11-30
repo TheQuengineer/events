@@ -1,18 +1,26 @@
 <article>
   <header>
+    <%= image_for(@event) %>
     <h1><%= @event.name %></h1>
   </header>
   <p>
-    <h3>When</h3>
+    <h3>When:</h3>
     <%= @event.starts_at %>
   </p>
-  <h3>Where</h3>
+  <h3>Where:</h3>
   <p>
     <%= @event.location %>
   </p>
 
-  <h3>Event Description</h3>
+  <h3>Event Description:</h3>
     <p>
       <%=@event.description%>
     </p>
+
+  <h3> Capacity: </h3>
+    <p>
+      <%= pluralize(@event.capacity, 'seat') %>
+    </p>
 </article>
+<%= link_to "Edit Event", edit_event_path(@event) %> |
+<%= link_to "Delete Event", event_path(@event), method: :delete, data: {confirm: 'Are you sure you want to delete this event?' } %>

@@ -14,7 +14,7 @@ public/api/**/*
 public/system
 public/assets
 nbproject
-*.DS_Store
+**/.DS_Store
 *.sublime-project
 *.sublime-workspace
 TAGS

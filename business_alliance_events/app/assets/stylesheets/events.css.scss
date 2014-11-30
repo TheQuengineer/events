@@ -1,3 +1,33 @@
 // Place all the styles related to the events controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+article.event {
+  img {
+    max-width: 100px;
+    max-height: 100px;
+    float: left;
+    margin: 0 20px;
+    border: 3px solid grey;
+  }
+}
+
+
+body {
+  background-image: image_url("cosmos.jpg");
+  background-repeat: no-repeat;
+  color: #B7C1DB;
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
+h3, th {
+  color: #3A4E7F;
+}
+
+a {
+  color: grey;
+}
+a:hover {
+  color: white;
+}

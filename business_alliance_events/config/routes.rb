@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
-  get "events" => "events#index"
-  get "events/:id" => "events#show"
+  root "events#index"
+  # get "events" => "events#index"
+  # get "events/new" => "events#new"
+  # get "events/:id" => "events#show", as: "event"
+  # get "events/:id/edit" => "events#edit", as: "edit_event"
+  # patch "events/:id" => "events#update"
+  resources :events
 end
