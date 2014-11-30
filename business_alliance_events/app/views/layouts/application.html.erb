@@ -7,6 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<p class="flash notice">
+  <%= flash[:notice] %>
+</p>
 <%= render "layouts/header" %>
 <%= render "layouts/sidebar" %>
 <%= yield %>

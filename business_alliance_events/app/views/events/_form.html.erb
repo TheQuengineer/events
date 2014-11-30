@@ -1,4 +1,5 @@
 <%= form_for(@event) do | form | %>
+  <%= render 'shared/errors' %>
   <p>
     <%= form.label :name, auto_focus: true %>
     </br>

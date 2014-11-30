@@ -39,3 +39,17 @@ a {
 a:hover {
   color: white;
 }
+
+.errors {
+  color: red;
+}
+.flash {
+  font-family: Papyrus, fantasy;
+  font-size: 10;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  &.notice {
+    background-color:  rgba(67, 189, 131, 0.3);
+  }
+}
