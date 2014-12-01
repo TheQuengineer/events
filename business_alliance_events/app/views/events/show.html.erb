@@ -21,6 +21,10 @@
     <p>
       <%= pluralize(@event.capacity, 'seat') %>
     </p>
+
+    <p>(<%= pluralize(@event.seats_left, 'seat') %> available) </p>
 </article>
+<%= link_to "Who's Registered?", event_registrations_path(@event) %> |
+<%= register_link(@event) %> |
 <%= link_to "Edit Event", edit_event_path(@event) %> |
 <%= link_to "Delete Event", event_path(@event), method: :delete, data: {confirm: 'Are you sure you want to delete this event?' } %>

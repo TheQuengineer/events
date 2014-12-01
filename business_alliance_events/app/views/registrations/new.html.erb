@@ -1,0 +1,19 @@
+<h1>Registration for <%= link_to @event.name, @event %></h1>
+
+<%= form_for([@event, @registration]) do | form | %>
+  <%= render "shared/errors", object: @registration %>
+  <ul>
+    <li>
+        <%= form.label :name %>
+        <%= form.text_field :name, size: 40, autofocus: true %>
+    </li>
+    <li>
+        <%= form.label :email %>
+        <%= form.text_field :email, size: 40 %>
+    </li>
+  </ul>
+  <p>
+      <%= form.submit %>
+      <%= link_to "Cancel", events_path, class: "button" %>
+  </p>
+<% end %>
