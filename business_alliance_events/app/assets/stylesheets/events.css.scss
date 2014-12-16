@@ -22,6 +22,10 @@ article.event {
 
 body {
   background-image: image_url("cosmos.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #B7C1DB;
   font-size: 20px;
